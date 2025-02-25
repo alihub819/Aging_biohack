@@ -6,7 +6,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <div className="min-h-screen bg-[#022031]">
+    <div className="min-h-screen bg-white">
       <header className="fixed top-0 w-full bg-[#022031] shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
