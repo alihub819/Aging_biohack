@@ -24,7 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div className="hidden md:flex items-center space-x-4">
               <a href="tel:+1-305-555-0123" className="flex items-center text-white hover:text-teal-700">
                 <Phone className="h-5 w-5 mr-2" />
-                (305) 234565432
+                (786) 9708366
               </a>
               <button className="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors">
                 Schedule Consultation
@@ -96,7 +96,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} RegenMD. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Aging Biohack. All rights reserved.</p>
           </div>
         </div>
       </footer>
