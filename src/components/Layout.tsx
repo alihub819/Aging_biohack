@@ -6,14 +6,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <div className="min-h-screen bg-white">
-      <header className="fixed top-0 w-full bg-white shadow-sm z-50">
+    <div className="min-h-screen bg-[#022031]">
+      <header className="fixed top-0 w-full bg-[#022031] shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <a href="/" className="text-2xl font-bold text-teal-600">
+              <img src="./public\AgingBiohack (1).png" alt="" className='w-62 h-72 object-fill pb-2' />
+              {/* <a href="/" className="text-2xl font-bold text-teal-600">
                 Aging<span className="text-gray-800">Biohacks </span>
-              </a>
+              </a> */}
             </div>
             
             <nav className="hidden md:flex space-x-8">
@@ -21,7 +22,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </nav>
 
             <div className="hidden md:flex items-center space-x-4">
-              <a href="tel:+1-305-555-0123" className="flex items-center text-teal-600 hover:text-teal-700">
+              <a href="tel:+1-305-555-0123" className="flex items-center text-white hover:text-teal-700">
                 <Phone className="h-5 w-5 mr-2" />
                 (305) 234565432
               </a>
