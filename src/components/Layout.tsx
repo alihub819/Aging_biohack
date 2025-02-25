@@ -62,7 +62,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">RegenMD</h3>
+              <h3 className="text-xl font-bold mb-4">Aging Biohack</h3>
               <p className="text-gray-400">
                 Leading the way in regenerative medicine and innovative therapies.
               </p>
@@ -81,8 +81,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <address className="text-gray-400 not-italic">
                 123 Medical Center Drive<br />
                 Miami, FL 33101<br />
-                (305) 555-0123<br />
-                info@regenmd.com
+                (786) 9708366<br />
+                sportsrecoverypro@gmail.com
               </address>
             </div>
             <div>
