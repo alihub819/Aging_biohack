@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import { Calendar, User, Tag, ArrowRight } from 'lucide-react';
+import { Calendar, ArrowRight } from 'lucide-react';
 import type { BlogPost } from '../types';
 
 const posts: BlogPost[] = [
@@ -12,9 +12,9 @@ const posts: BlogPost[] = [
     category: "Research",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
     author: {
-      name: "Dr. Sarah Johnson",
-      role: "Medical Director",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
     }
   },
   {
@@ -25,9 +25,9 @@ const posts: BlogPost[] = [
     category: "Treatments",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
     author: {
-      name: "Dr. Michael Chen",
-      role: "Chief of Research",
-      image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
     }
   },
   {
@@ -38,9 +38,100 @@ const posts: BlogPost[] = [
     category: "Success Stories",
     image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
     author: {
-      name: "Dr. Emily Rodriguez",
-      role: "Clinical Specialist",
-      image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    }
+  },
+  {
+    id: "4",
+    title: "The Benefits of NAD+ Therapy for Cellular Energy",
+    excerpt: "Discover how NAD+ therapy can boost energy production and promote cellular repair.",
+    date: "2024-02-28",
+    category: "Treatments",
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    }
+  },
+  {
+    id: "5",
+    title: "How Stem Cell Therapy is Transforming Joint Health",
+    excerpt: "Learn how stem cell therapy can help reduce inflammation and promote joint repair.",
+    date: "2024-02-20",
+    category: "Treatments",
+    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    }
+  },
+  {
+    id: "6",
+    title: "Hormone Replacement Therapy: Balancing Your Vitality",
+    excerpt: "Explore the role of HRT in restoring hormonal balance and enhancing well-being.",
+    date: "2024-02-15",
+    category: "Wellness",
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    }
+  },
+  {
+    id: "7",
+    title: "IV Nutrient Therapy: Rehydration and Revitalization",
+    excerpt: "A closer look at IV nutrient therapy and how it supports overall wellness.",
+    date: "2024-02-10",
+    category: "Wellness",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    }
+  },
+  {
+    id: "8",
+    title: "Cellular Health: The Foundation of Wellness",
+    excerpt: "Understand why cellular health is crucial for maintaining overall vitality and preventing aging.",
+    date: "2024-02-05",
+    category: "Research",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    }
+  },
+  {
+    id: "9",
+    title: "Advances in Regenerative Medicine: A Comprehensive Overview",
+    excerpt: "Stay updated with the latest advances and breakthroughs in regenerative medicine.",
+    date: "2024-02-01",
+    category: "Research",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    }
+  },
+  {
+    id: "10",
+    title: "Integrative Approaches to Wellness at Aging BioHacks",
+    excerpt: "Discover how a holistic approach to wellness can enhance your quality of life.",
+    date: "2024-01-28",
+    category: "Wellness",
+    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
     }
   }
 ];
