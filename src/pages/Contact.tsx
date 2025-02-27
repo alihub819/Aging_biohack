@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Layout from '../components/Layout';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { motion } from 'framer-motion';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -10,15 +11,54 @@ export default function Contact() {
     phone: '',
     subject: '',
     message: '',
+    time: '', // New field for consultation time
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+
+    // If subject is consultation, ensure preferred time is provided.
+    if (formData.subject === 'consultation' && !formData.time) {
+      alert('Please select a preferred time for your consultation.');
+      return;
+    }
+
+    // Prepare the email template parameters
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone,
+      subject: formData.subject,
+      message: formData.message,
+      time: formData.subject === 'consultation' ? formData.time : 'N/A',
+    };
+
+    try {
+      const result = await emailjs.send(
+        'YOUR_SERVICE_ID',    // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID',   // Replace with your EmailJS template ID
+        templateParams,
+        'YOUR_USER_ID'        // Replace with your EmailJS user/public key
+      );
+      console.log(result.text);
+      alert('Message sent successfully!');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+        time: '',
+      });
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('Failed to send message. Please try again later.');
+    }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -58,7 +98,7 @@ export default function Contact() {
             >
               <Phone className="h-10 w-10 text-teal-600 mb-4" />
               <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-              <p className="mt-2 text-base text-gray-500">(305) 555-0123</p>
+              <p className="mt-2 text-base text-gray-500">(305) 8641373</p>
               <a href="tel:+13055550123" className="mt-2 text-teal-600 hover:text-teal-700">
                 Call now
               </a>
@@ -72,7 +112,7 @@ export default function Contact() {
             >
               <Mail className="h-10 w-10 text-teal-600 mb-4" />
               <h3 className="text-lg font-medium text-gray-900">Email</h3>
-              <p className="mt-2 text-base text-gray-500">info@agingbiohacks.com</p>
+              <p className="mt-2 text-base text-gray-500">sportsrecoverypro@gmail.com</p>
               <a href="mailto:info@agingbiohacks.com" className="mt-2 text-teal-600 hover:text-teal-700">
                 Send email
               </a>
@@ -191,6 +231,25 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
+
+                {formData.subject === 'consultation' && (
+                  <div>
+                    <label htmlFor="time" className="block text-sm font-medium text-gray-700">
+                      Preferred Time
+                    </label>
+                    <div className="mt-1">
+                      <input
+                        type="time"
+                        name="time"
+                        id="time"
+                        value={formData.time}
+                        onChange={handleChange}
+                        className="py-3 px-4 block w-full shadow-sm focus:ring-teal-500 focus:border-teal-500 border-gray-300 rounded-md"
+                        required
+                      />
+                    </div>
+                  </div>
+                )}
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700">

@@ -45,11 +45,11 @@ export default function Location() {
                     </div>
                     <div className="flex items-center">
                       <Phone className="h-6 w-6 text-teal-600" />
-                      <span className="ml-3 text-gray-500">(305) 555-0123</span>
+                      <span className="ml-3 text-gray-500">(305) 8641373</span>
                     </div>
                     <div className="flex items-center">
                       <Mail className="h-6 w-6 text-teal-600" />
-                      <span className="ml-3 text-gray-500">info@regenmd.com</span>
+                      <span className="ml-3 text-gray-500"> sportsrecoverypro@gmail.com</span>
                     </div>
                   </div>
                 </div>
