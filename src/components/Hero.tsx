@@ -1,15 +1,13 @@
 import React from 'react';
-import { ArrowRight, Shield, Award, UserCheck } from 'lucide-react';
+import { ArrowRight, Shield, Award, UserCheck, Zap, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.3
-    }
-  }
+    transition: { staggerChildren: 0.3 },
+  },
 };
 
 const itemVariants = {
@@ -17,22 +15,21 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.6
-    }
-  }
+    transition: { duration: 0.6 },
+  },
 };
 
 export default function Hero() {
   return (
     <div className="relative bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        {/* Left Content */}
+        <div className="relative z-10 pb-8 bg-white sm:pb-12 md:pb-16 lg:max-w-2xl lg:w-full lg:pb-20 xl:pb-24">
           <motion.main
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+            className="mt-6 mx-auto max-w-7xl px-4 sm:mt-8 sm:px-6 md:mt-10 lg:mt-12 lg:px-8 xl:mt-16"
           >
             <motion.div variants={itemVariants} className="sm:text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -50,70 +47,64 @@ export default function Hero() {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="block text-teal-600"
                 >
-                  Innovative Bio Solutions
+                  Regenerative Medicine & Cellular Health
                 </motion.span>
               </h1>
               <motion.p
                 variants={itemVariants}
-                className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
+                className="mt-4 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-6 md:text-xl lg:mx-0"
               >
-                Our functional medicine practice offers personalized consultations to explore cutting-edge regenerative therapies, including exosomes. Individual results may vary.
+                Miami's premier clinic for cutting-edge regenerative therapies that harness your body's natural healing processes. We specialize in NAD+, exosome, stem cell, and hormone therapies to help you feel youthful, energetic, and healthy.
               </motion.p>
-              
               <motion.div
                 variants={containerVariants}
                 className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3 lg:max-w-lg"
               >
                 <motion.div
                   whileHover={{ scale: 1.05 }}
-                  className="flex items-center bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-all"
+                  className="flex items-center bg-white p-2 rounded-lg shadow-sm hover:shadow-md transition-all"
                 >
                   <Shield className="h-6 w-6 text-teal-600" />
                   <span className="ml-2 text-sm text-gray-600">Licensed Experts</span>
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
-                  className="flex items-center bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-all"
+                  className="flex items-center bg-white p-2 rounded-lg shadow-sm hover:shadow-md transition-all"
                 >
                   <Award className="h-6 w-6 text-teal-600" />
-                  <span className="ml-2 text-sm text-gray-600">Advanced Care</span>
+                  <span className="ml-2 text-sm text-gray-600">FDA Compliant</span>
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
-                  className="flex items-center bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-all"
+                  className="flex items-center bg-white p-2 rounded-lg shadow-sm hover:shadow-md transition-all"
                 >
                   <UserCheck className="h-6 w-6 text-teal-600" />
-                  <span className="ml-2 text-sm text-gray-600">Personalized Plans</span>
+                  <span className="ml-2 text-sm text-gray-600">Personalized Care</span>
                 </motion.div>
               </motion.div>
-
               <motion.div
                 variants={containerVariants}
-                className="mt-8 sm:mt-10 sm:flex sm:justify-center lg:justify-start"
+                className="mt-8 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-3"
               >
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="rounded-full shadow"
                 >
-                  <a 
-                    href="/consultation" 
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-teal-600 hover:bg-teal-700 md:py-4 md:text-lg md:px-10 transform transition-all duration-300"
+                  <a
+                    href="/contact"
+                    className="flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-full text-white bg-teal-600 hover:bg-teal-700 transition duration-300"
                   >
-                    Schedule Consultation
+                    Free Consultation
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="mt-3 sm:mt-0 sm:ml-3"
-                >
-                  <a 
-                    href="/treatments" 
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-teal-700 bg-teal-100 hover:bg-teal-200 md:py-4 md:text-lg md:px-10 transform transition-all duration-300"
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <a
+                    href="/treatments"
+                    className="flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-full text-teal-700 bg-teal-100 hover:bg-teal-200 transition duration-300"
                   >
-                    Learn More
+                    Our Therapies
                   </a>
                 </motion.div>
               </motion.div>
@@ -121,19 +112,54 @@ export default function Hero() {
           </motion.main>
         </div>
       </div>
+
+      {/* Right Image */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
       >
-        <div className="relative h-56 sm:h-72 md:h-96 lg:h-full">
+        <div className="relative h-64 sm:h-72 md:h-80 lg:h-full">
           <img
             className="absolute inset-0 w-full h-full object-cover"
             src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
             alt="Medical professional in modern clinic"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-white/50 to-transparent lg:from-white/0" />
+        </div>
+      </motion.div>
+
+      {/* Floating Features */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1, duration: 0.8 }}
+        className="relative z-20 px-4 sm:px-6 lg:px-8 mt-4"
+      >
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-gray-100 rounded-xl shadow-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 divide-x divide-gray-100 p-4">
+            <motion.div whileHover={{ y: -5 }} className="flex flex-col items-center text-center">
+              <Zap className="h-8 w-8 text-teal-600 mb-2" />
+              <h3 className="text-lg font-semibold text-gray-900">NAD+ Therapy</h3>
+              <p className="mt-1 text-sm text-gray-500">Boost energy &amp; cellular repair</p>
+            </motion.div>
+            <motion.div whileHover={{ y: -5 }} className="flex flex-col items-center text-center">
+              <Sparkles className="h-8 w-8 text-teal-600 mb-2" />
+              <h3 className="text-lg font-semibold text-gray-900">Exosome Therapy</h3>
+              <p className="mt-1 text-sm text-gray-500">Advanced cellular regeneration</p>
+            </motion.div>
+            <motion.div whileHover={{ y: -5 }} className="flex flex-col items-center text-center">
+              <Shield className="h-8 w-8 text-teal-600 mb-2" />
+              <h3 className="text-lg font-semibold text-gray-900">Stem Cell Therapy</h3>
+              <p className="mt-1 text-sm text-gray-500">Harness your body's healing</p>
+            </motion.div>
+            <motion.div whileHover={{ y: -5 }} className="flex flex-col items-center text-center">
+              <Award className="h-8 w-8 text-teal-600 mb-2" />
+              <h3 className="text-lg font-semibold text-gray-900">Hormone Therapy</h3>
+              <p className="mt-1 text-sm text-gray-500">Restore optimal balance</p>
+            </motion.div>
+          </div>
         </div>
       </motion.div>
     </div>
