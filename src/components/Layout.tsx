@@ -13,7 +13,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <img
-                src="https://res.cloudinary.com/dlasb4krd/image/upload/v1740508075/q8mvdcjiocqmtb1pmepp.png"
+                src="https://res.cloudinary.com/dklqbx5k0/image/upload/v1740717967/pcudguzwxcmqfbjchhnr.png"
                 alt=""
                 className="w-62 h-72 object-fill pb-2"
               />
