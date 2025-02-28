@@ -9,6 +9,8 @@ import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import Location from './pages/Location';
 import TreatmentDetail from './pages/TreatmentDetail';
+import PopupMessage from './components/PopupMessage';
+import SocialMediaBar from './components/SocialMediaBar';
 import { Shield, Award, Users, Clock, Star, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { treatments } from './data/treatments';
@@ -19,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={
           <Layout>
+            <SocialMediaBar />
             <Hero />
             
             {/* Medical Disclaimer */}
@@ -241,6 +244,9 @@ function App() {
                 </motion.div>
               </div>
             </section>
+            
+            {/* Popup Message */}
+            <PopupMessage />
           </Layout>
         } />
         <Route path="/about" element={<About />} />
