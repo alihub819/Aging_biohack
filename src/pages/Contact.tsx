@@ -260,9 +260,9 @@ export default function Contact() {
                         required
                       >
                         <option value="">Select a subject</option>
-                        <option value="consultation">Schedule Consultation</option>
+                        {/* <option value="consultation">Schedule Consultation</option> */}
                         <option value="information">Treatment Information</option>
-                        {/* <option value="pricing">Pricing & Insurance</option> */}
+                        <option value="pricing">Pricing & Insurance</option>
                         <option value="other">Other</option>
                       </select>
                     </div>
