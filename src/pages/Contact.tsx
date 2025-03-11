@@ -49,7 +49,7 @@ export default function Contact() {
     setSubmitStatus("Sending...")
 
     try {
-      const response = await fetch("http://localhost:4000/api/post/email/agingbiohack", {
+      const response = await fetch("https://codevengers.services/api/post/email/agingbiohack", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
