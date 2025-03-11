@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight, Star, Clock, CheckCircle, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { treatments } from '../data/treatments';
-
+import { Link } from 'react-router-dom';
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -123,14 +123,15 @@ export default function TreatmentGrid() {
                       </motion.div>
                     ))}
                   </div>
+                  <Link to={`/treatments/${treatment.id}`}>
                   <motion.a
                     whileHover={{ scale: 1.05, x: 5 }}
-                    href={`/treatments/${treatment.id}`}
                     className="flex items-center text-teal-600 hover:text-teal-700 font-medium"
-                  >
+                    >
                     Learn more
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </motion.a>
+                    </Link>
                 </div>
               </div>
             </motion.div>
