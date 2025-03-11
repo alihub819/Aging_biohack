@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Hero from './components/Hero';
@@ -14,6 +13,7 @@ import SocialMediaBar from './components/SocialMediaBar';
 import { Shield, Award, Users, Clock, Star, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { treatments } from './data/treatments';
+import TreatmentsPage from './pages/Treament';
 
 function App() {
   return (
@@ -254,6 +254,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/location" element={<Location />} />
+        <Route path="/treatment" element={<TreatmentsPage />} />
         {treatments.map(treatment => (
           <Route 
             key={treatment.id}

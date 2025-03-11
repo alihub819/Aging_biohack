@@ -1,69 +1,106 @@
-import React, { useState } from 'react';
-import Layout from '../components/Layout';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { motion } from 'framer-motion';
-import emailjs from 'emailjs-com';
+"use client"
+
+import type React from "react"
+import { useState } from "react"
+import Layout from "../components/Layout"
+import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { motion } from "framer-motion"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-    time: '', // New field for consultation time
-  });
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+    time: "", // New field for consultation time
+  })
+  const [errors, setErrors] = useState<any>({})
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState("")
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    // If subject is consultation, ensure preferred time is provided.
-    if (formData.subject === 'consultation' && !formData.time) {
-      alert('Please select a preferred time for your consultation.');
-      return;
+    // Reset errors
+    setErrors({})
+
+    // Validate form
+    const newErrors: Record<string, string> = {}
+    if (!formData.name.trim()) newErrors.name = "Name is required"
+    if (!formData.email.trim()) newErrors.email = "Email is required"
+    if (!/^\S+@\S+\.\S+$/.test(formData.email)) newErrors.email = "Valid email is required"
+    if (!formData.phone.trim()) newErrors.phone = "Phone is required"
+    if (!formData.subject) newErrors.subject = "Subject is required"
+    if (!formData.message.trim()) newErrors.message = "Message is required"
+
+    // If subject is consultation, ensure preferred time is provided
+    if (formData.subject === "consultation" && !formData.time) {
+      newErrors.time = "Please select a preferred time for your consultation"
     }
 
-    // Prepare the email template parameters
-    const templateParams = {
-      from_name: formData.name,
-      from_email: formData.email,
-      phone: formData.phone,
-      subject: formData.subject,
-      message: formData.message,
-      time: formData.subject === 'consultation' ? formData.time : 'N/A',
-    };
+    // If there are errors, don't submit
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors)
+      return
+    }
+
+    setIsSubmitting(true)
+    setSubmitStatus("Sending...")
 
     try {
-      const result = await emailjs.send(
-        'YOUR_SERVICE_ID',    // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID',   // Replace with your EmailJS template ID
-        templateParams,
-        'YOUR_USER_ID'        // Replace with your EmailJS user/public key
-      );
-      console.log(result.text);
-      alert('Message sent successfully!');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
-        time: '',
-      });
-    } catch (error) {
-      console.error('Error sending message:', error);
-      alert('Failed to send message. Please try again later.');
-    }
-  };
+      const response = await fetch("http://localhost:4000/api/post/email/agingbiohack", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      })
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
+      const result = await response.json()
+
+      if (result === true) {
+        setSubmitStatus("Message sent!")
+        // Reset form after successful submission
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+          time: "",
+        })
+
+        // Reset button text after 3 seconds
+        setTimeout(() => {
+          setSubmitStatus("")
+          setIsSubmitting(false)
+        }, 3000)
+      } else {
+        setSubmitStatus("")
+        setIsSubmitting(false)
+        alert("Failed to send message. Please try again.")
+      }
+    } catch (error) {
+      console.error("Error sending message:", error)
+      setSubmitStatus("")
+      setIsSubmitting(false)
+      alert("Failed to send message. Please try again later.")
+    }
+  }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    });
-  };
+    })
+  }
 
   return (
     <Layout>
@@ -76,9 +113,7 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="text-center"
           >
-            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Contact Us
-            </h1>
+            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Contact Us</h1>
             <p className="mt-6 max-w-3xl mx-auto text-xl text-teal-100">
               Get in touch with our team to schedule a consultation or learn more about our treatments.
             </p>
@@ -127,7 +162,8 @@ export default function Contact() {
               <MapPin className="h-10 w-10 text-teal-600 mb-4" />
               <h3 className="text-lg font-medium text-gray-900">Location</h3>
               <p className="mt-2 text-base text-gray-500 text-center">
-                123 Medical Center Drive<br />
+                123 Medical Center Drive
+                <br />
                 Miami, FL 33101
               </p>
               <a
@@ -153,9 +189,7 @@ export default function Contact() {
             className="bg-white rounded-lg shadow-xl overflow-hidden"
           >
             <div className="px-6 py-8">
-              <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">
-                Send us a Message
-              </h2>
+              <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Send us a Message</h2>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
@@ -174,6 +208,7 @@ export default function Contact() {
                         required
                       />
                     </div>
+                    {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
                   </div>
 
                   <div>
@@ -191,6 +226,7 @@ export default function Contact() {
                         required
                       />
                     </div>
+                    {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
                   </div>
 
                   <div>
@@ -207,6 +243,7 @@ export default function Contact() {
                         className="py-3 px-4 block w-full shadow-sm focus:ring-teal-500 focus:border-teal-500 border-gray-300 rounded-md"
                       />
                     </div>
+                    {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}
                   </div>
 
                   <div>
@@ -225,14 +262,15 @@ export default function Contact() {
                         <option value="">Select a subject</option>
                         <option value="consultation">Schedule Consultation</option>
                         <option value="information">Treatment Information</option>
-                        <option value="pricing">Pricing & Insurance</option>
+                        {/* <option value="pricing">Pricing & Insurance</option> */}
                         <option value="other">Other</option>
                       </select>
                     </div>
+                    {errors.subject && <p className="mt-1 text-sm text-red-600">{errors.subject}</p>}
                   </div>
                 </div>
 
-                {formData.subject === 'consultation' && (
+                {formData.subject === "consultation" && (
                   <div>
                     <label htmlFor="time" className="block text-sm font-medium text-gray-700">
                       Preferred Time
@@ -248,6 +286,7 @@ export default function Contact() {
                         required
                       />
                     </div>
+                    {errors.time && <p className="mt-1 text-sm text-red-600">{errors.time}</p>}
                   </div>
                 )}
 
@@ -266,6 +305,7 @@ export default function Contact() {
                       required
                     />
                   </div>
+                  {errors.message && <p className="mt-1 text-sm text-red-600">{errors.message}</p>}
                 </div>
 
                 <div className="text-center">
@@ -273,10 +313,11 @@ export default function Contact() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     type="submit"
-                    className="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-full shadow-sm text-base font-medium text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+                    disabled={isSubmitting}
+                    className="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-full shadow-sm text-base font-medium text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 disabled:opacity-70"
                   >
-                    Send Message
-                    <Send className="ml-2 h-5 w-5" />
+                    {submitStatus || "Send Message"}
+                    {!submitStatus && <Send className="ml-2 h-5 w-5" />}
                   </motion.button>
                 </div>
               </form>
@@ -297,5 +338,6 @@ export default function Contact() {
         />
       </div>
     </Layout>
-  );
+  )
 }
+

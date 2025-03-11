@@ -1,10 +1,8 @@
-import React from 'react';
 import Layout from '../components/Layout';
 import { Clock, CheckCircle, AlertCircle, ArrowRight, Star } from 'lucide-react';
-import type { Treatment } from '../types';
 
 interface Props {
-  treatment: Treatment;
+  treatment: any;
 }
 
 export default function TreatmentDetail({ treatment }: Props) {
@@ -59,7 +57,7 @@ export default function TreatmentDetail({ treatment }: Props) {
 
               <h2>Treatment Process</h2>
               <ul>
-                {treatment.details?.process.map((step, index) => (
+                {treatment.details?.process.map((step:any, index:number) => (
                   <li key={index} className="flex items-start">
                     <CheckCircle className="h-6 w-6 text-teal-600 mr-2 mt-1" />
                     <span>{step}</span>
@@ -69,7 +67,7 @@ export default function TreatmentDetail({ treatment }: Props) {
 
               <h2>Benefits</h2>
               <ul>
-                {treatment.benefits.map((benefit, index) => (
+                {treatment.benefits.map((benefit:any, index:number) => (
                   <li key={index} className="flex items-start">
                     <CheckCircle className="h-6 w-6 text-teal-600 mr-2 mt-1" />
                     <span>{benefit}</span>
@@ -124,7 +122,7 @@ export default function TreatmentDetail({ treatment }: Props) {
                 <div>
                   <h4 className="font-medium text-gray-900 mb-2">Eligibility Criteria</h4>
                   <ul className="space-y-2">
-                    {treatment.details?.eligibility.map((criterion, index) => (
+                    {treatment.details?.eligibility.map((criterion:any, index:number) => (
                       <li key={index} className="flex items-start">
                         <CheckCircle className="h-5 w-5 text-teal-600 mr-2 mt-0.5" />
                         <span className="text-gray-600">{criterion}</span>

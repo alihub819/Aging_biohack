@@ -35,18 +35,18 @@ export const treatments = [
       eligibility: ['Stable medical condition', 'No active infections', 'Physician referral', 'Realistic expectations']
     }
   },
-  {
-    id: 'hormone-therapy',
-    title: 'Hormone Replacement Therapy',
-    description: 'Hormone Replacement Therapy restores and balances hormones that decline or become imbalanced with age.',
-    image: 'https://images.unsplash.com/photo-1631815588090-d1bcbe9a8545?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
-    benefits: ['Increased energy', 'Improved mood', 'Enhanced cognitive function', 'Better sleep quality'],
-    details: {
-      overview: 'Our HRT programs aim to replenish deficient hormones like estrogen, progesterone, testosterone, or thyroid hormone to optimal levels under careful medical supervision.',
-      process: ['Comprehensive hormone testing', 'Personalized treatment plan', 'Regular monitoring', 'Ongoing optimization'],
-      eligibility: ['Adults with hormone deficiencies', 'Symptomatic individuals', 'Comprehensive health screening', 'No contraindications']
-    }
-  },
+  // {
+  //   id: 'hormone-therapy',
+  //   title: 'Hormone Replacement Therapy',
+  //   description: 'Hormone Replacement Therapy restores and balances hormones that decline or become imbalanced with age.',
+  //   image: 'https://images.unsplash.com/photo-1631815588090-d1bcbe9a8545?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
+  //   benefits: ['Increased energy', 'Improved mood', 'Enhanced cognitive function', 'Better sleep quality'],
+  //   details: {
+  //     overview: 'Our HRT programs aim to replenish deficient hormones like estrogen, progesterone, testosterone, or thyroid hormone to optimal levels under careful medical supervision.',
+  //     process: ['Comprehensive hormone testing', 'Personalized treatment plan', 'Regular monitoring', 'Ongoing optimization'],
+  //     eligibility: ['Adults with hormone deficiencies', 'Symptomatic individuals', 'Comprehensive health screening', 'No contraindications']
+  //   }
+  // },
   {
     id: 'iv-nutrient-therapy',
     title: 'IV Nutrient Therapy',

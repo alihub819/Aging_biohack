@@ -1,4 +1,3 @@
-import React from 'react';
 import Layout from '../components/Layout';
 import { MapPin, Phone, Mail, Clock, Car, Train, Plane } from 'lucide-react';
 
