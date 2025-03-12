@@ -133,36 +133,37 @@ export default function Hero() {
 
       {/* Floating Features */}
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 0.8 }}
-        className="relative z-20 px-4 sm:px-6 lg:px-8 mt-4"
-      >
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-gray-100 rounded-xl shadow-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 divide-x divide-gray-100 p-4">
-            <motion.div whileHover={{ y: -5 }} className="flex flex-col items-center text-center">
-              <Zap className="h-8 w-8 text-teal-600 mb-2" />
-              <h3 className="text-lg font-semibold text-gray-900">NAD+ Therapy</h3>
-              <p className="mt-1 text-sm text-gray-500">Boost energy &amp; cellular repair</p>
-            </motion.div>
-            <motion.div whileHover={{ y: -5 }} className="flex flex-col items-center text-center">
-              <Sparkles className="h-8 w-8 text-teal-600 mb-2" />
-              <h3 className="text-lg font-semibold text-gray-900">Exosome Therapy</h3>
-              <p className="mt-1 text-sm text-gray-500">Advanced cellular regeneration</p>
-            </motion.div>
-            <motion.div whileHover={{ y: -5 }} className="flex flex-col items-center text-center">
-              <Shield className="h-8 w-8 text-teal-600 mb-2" />
-              <h3 className="text-lg font-semibold text-gray-900">Stem Cell Therapy</h3>
-              <p className="mt-1 text-sm text-gray-500">Harness your body's healing</p>
-            </motion.div>
-            <motion.div whileHover={{ y: -5 }} className="flex flex-col items-center text-center">
-              <Award className="h-8 w-8 text-teal-600 mb-2" />
-              <h3 className="text-lg font-semibold text-gray-900">Hormone Therapy</h3>
-              <p className="mt-1 text-sm text-gray-500">Restore optimal balance</p>
-            </motion.div>
-          </div>
-        </div>
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1, duration: 0.8 }}
+  className="relative z-20 px-4 sm:px-6 lg:px-8 mt-4"
+>
+  <div className="max-w-7xl mx-auto">
+    <div className="bg-gray-100 rounded-xl shadow-xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 divide-x divide-gray-100 p-4">
+      <motion.div whileHover={{ y: -5 }} className="flex flex-col items-center text-center">
+        <Zap className="h-8 w-8 text-teal-600 mb-2" />
+        <h3 className="text-lg font-semibold text-gray-900">NAD+ Therapy</h3>
+        <p className="mt-1 text-sm text-gray-500">Support energy & cellular function</p>
       </motion.div>
+      <motion.div whileHover={{ y: -5 }} className="flex flex-col items-center text-center">
+        <Sparkles className="h-8 w-8 text-teal-600 mb-2" />
+        <h3 className="text-lg font-semibold text-gray-900">Exosome Therapy</h3>
+        <p className="mt-1 text-sm text-gray-500">Supports cellular communication & wellness</p>
+      </motion.div>
+      <motion.div whileHover={{ y: -5 }} className="flex flex-col items-center text-center">
+        <Shield className="h-8 w-8 text-teal-600 mb-2" />
+        <h3 className="text-lg font-semibold text-gray-900">Stem Cell Therapy</h3>
+        <p className="mt-1 text-sm text-gray-500">Designed to support natural recovery</p>
+      </motion.div>
+      <motion.div whileHover={{ y: -5 }} className="flex flex-col items-center text-center">
+        <Award className="h-8 w-8 text-teal-600 mb-2" />
+        <h3 className="text-lg font-semibold text-gray-900">Hormone Therapy</h3>
+        <p className="mt-1 text-sm text-gray-500">Helps support hormonal balance</p>
+      </motion.div>
+    </div>
+  </div>
+</motion.div>
+
     </div>
   );
 }

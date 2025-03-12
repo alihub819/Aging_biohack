@@ -162,9 +162,10 @@ export default function Contact() {
               <MapPin className="h-10 w-10 text-teal-600 mb-4" />
               <h3 className="text-lg font-medium text-gray-900">Location</h3>
               <p className="mt-2 text-base text-gray-500 text-center">
-                123 Medical Center Drive
+              1899 NE 164th St,
+           
                 <br />
-                Miami, FL 33101
+                North Miami Beach, FL 33162
               </p>
               <a
                 href="https://maps.google.com"

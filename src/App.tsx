@@ -66,7 +66,7 @@ function App() {
                   >
                     <iframe
                       className="w-full h-full"
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      src="https://www.youtube.com/embed/NNBJqzeN0_c?si=-nAtDkF7bmOUkMg6"
                       title="Understanding Regenerative Medicine"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -80,7 +80,7 @@ function App() {
                   >
                     <iframe
                       className="w-full h-full"
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                       src="https://www.youtube.com/embed/NNBJqzeN0_c?si=-nAtDkF7bmOUkMg6"
                       title="Patient Success Stories"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -236,7 +236,7 @@ function App() {
                 >
                   <iframe
                     className="w-full h-full"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    src="https://www.youtube.com/embed/NNBJqzeN0_c?si=-nAtDkF7bmOUkMg6"
                     title="Virtual Facility Tour"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

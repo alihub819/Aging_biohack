@@ -9,48 +9,58 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen bg-white">
       <header className="fixed top-0 w-full bg-[#022031] shadow-sm z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <img
-                src="https://res.cloudinary.com/dklqbx5k0/image/upload/v1740717967/pcudguzwxcmqfbjchhnr.png"
-                alt=""
-                className="w-62 h-72 object-fill pb-2"
-              />
-            </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between items-center h-16">
+      <div className="flex items-center">
+        <img
+          src="https://res.cloudinary.com/dklqbx5k0/image/upload/v1740717967/pcudguzwxcmqfbjchhnr.png"
+          alt="Logo"
+          className="w-62 h-72 object-fill pb-2"
+        />
+      </div>
 
-            <nav className="hidden md:flex space-x-8">
-              <Navigation />
-            </nav>
+      <nav className="hidden md:flex space-x-8">
+        <Navigation />
+      </nav>
 
-            <div className="hidden md:flex items-center space-x-4">
-              <a href="tel:+1-305-555-0123" className="flex items-center text-white hover:text-teal-700">
-                <Phone className="h-5 w-5 mr-2" />
-                (305) 8641373
-              </a>
-              {/* Updated Schedule Consultation Button with Link */}
-              <Link to="/contact">
-                <button className="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors">
-                  Schedule Consultation
-                </button>
-              </Link>
-            </div>
+      <div className="hidden md:flex items-center space-x-4">
+        <a href="tel:+13058641373" className="flex items-center text-white hover:text-teal-700">
+          <Phone className="h-5 w-5 mr-2" />
+          (305) 864-1373
+        </a>
 
-            <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              {isMenuOpen ? <X className="h-6 w-6 text-gray-600" /> : <Menu className="h-6 w-6 text-gray-600" />}
-            </button>
-          </div>
-        </div>
+        <Link to="/contact">
+          <button className="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors">
+            Start Conversation
+          </button>
+        </Link>
 
-        {/* Mobile menu */}
-        {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Navigation />
-            </div>
-          </div>
-        )}
-      </header>
+        <a
+          href="https://meet.brevo.com/medicalwellness/aging-biohacking-appointments-"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-colors">
+            Book Now
+          </button>
+        </a>
+      </div>
+
+      <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        {isMenuOpen ? <X className="h-6 w-6 text-gray-600" /> : <Menu className="h-6 w-6 text-gray-600" />}
+      </button>
+    </div>
+  </div>
+
+  {isMenuOpen && (
+    <div className="md:hidden">
+      <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <Navigation />
+      </div>
+    </div>
+  )}
+</header>
+
 
       <main className="pt-16">{children}</main>
 
@@ -91,9 +101,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <address className="text-gray-400 not-italic">
-                123 Medical Center Drive
+              1899 NE 164th St,
                 <br />
-                Miami, FL 33101
+                North Miami Beach, FL 33162
                 <br />
                 (305) 8641373
                 <br />

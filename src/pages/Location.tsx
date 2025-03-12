@@ -38,8 +38,9 @@ export default function Location() {
                     <div className="flex items-center">
                       <MapPin className="h-6 w-6 text-teal-600" />
                       <span className="ml-3 text-gray-500">
-                        123 Medical Center Drive<br />
-                        Miami, FL 33101
+                      1899 NE 164th St,
+                   <br />
+                   North Miami Beach, FL 33162
                       </span>
                     </div>
                     <div className="flex items-center">
