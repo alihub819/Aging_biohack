@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Shield, Award, UserCheck, Zap, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -91,13 +92,13 @@ export default function Hero() {
                   whileTap={{ scale: 0.95 }}
                   className="rounded-full shadow"
                 >
-                  <a
-                    href="/contact"
+                  <Link
+                    to="/contact"
                     className="flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-full text-white bg-teal-600 hover:bg-teal-700 transition duration-300"
                   >
                     Free Consultation
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
+                  </Link>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <a
