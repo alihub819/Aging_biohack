@@ -133,7 +133,7 @@ export default function TreatmentDetail({ treatment }: Props) {
 
                 <div className="pt-4">
                   <a
-                    href="/consultation"
+                    href="/contact"
                     className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-full shadow-sm text-base font-medium text-white bg-teal-600 hover:bg-teal-700"
                   >
                     Schedule Consultation
