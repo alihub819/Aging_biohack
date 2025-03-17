@@ -64,13 +64,14 @@ function App() {
                     viewport={{ once: true }}
                     className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg"
                   >
-                    <iframe
-                      className="w-full h-full"
-                      src="https://www.youtube.com/embed/NNBJqzeN0_c?si=-nAtDkF7bmOUkMg6"
-                      title="Understanding Regenerative Medicine"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
+                   <iframe
+  className="w-full h-full"
+  src="https://www.youtube.com/embed/BMgfAlZzAJU"
+  title="Understanding Regenerative Medicine"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+/>
+
                   </motion.div>
                   <motion.div 
                     initial={{ opacity: 0, x: 50 }}

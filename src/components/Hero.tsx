@@ -121,14 +121,17 @@ export default function Hero() {
         transition={{ duration: 1 }}
         className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
       >
-        <div className="relative h-64 sm:h-72 md:h-80 lg:h-full">
-          <img
-            className="absolute inset-0 w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&q=80"
-            alt="Medical professional in modern clinic"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-white/50 to-transparent lg:from-white/0" />
-        </div>
+  <div className="relative h-64 sm:h-72 md:h-80 lg:h-full">
+  <img
+    className="absolute inset-0 w-full h-full object-cover"
+    src="https://img.freepik.com/free-photo/close-up-doctor-with-stethoscope_23-2149191355.jpg?t=st=1742233592~exp=1742237192~hmac=cef8de0534a8734c5311e7c99ebef95148e5c979c2878b97f038edfd714b9dbf&w=1380"
+    alt="Doctor with stethoscope"
+  />
+  <div className="absolute inset-0 bg-gradient-to-r from-white/50 to-transparent lg:from-white/0" />
+</div>
+
+
+
       </motion.div>
 
       {/* Floating Features */}
