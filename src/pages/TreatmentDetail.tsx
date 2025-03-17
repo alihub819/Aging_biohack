@@ -116,7 +116,7 @@ export default function TreatmentDetail({ treatment }: Props) {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Clock className="h-5 w-5 text-teal-600" />
-                  <span className="ml-2 text-gray-600">4-6 week program</span>
+               
                 </div>
 
                 <div>

@@ -85,7 +85,7 @@ export default function TreatmentGrid() {
                     className="mt-4 flex items-center space-x-2"
                   >
                     <Clock className="h-4 w-4 text-teal-600" />
-                    <span className="text-sm text-gray-600">4-6 week program</span>
+                    <span className="text-sm text-gray-600"></span>
                   </motion.div>
                   <motion.div
                     initial={{ opacity: 0, x: -10 }}
