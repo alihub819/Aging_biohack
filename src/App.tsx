@@ -13,7 +13,7 @@ import SocialMediaBar from './components/SocialMediaBar';
 import { Shield, Award, Users, Clock, Star, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { treatments } from './data/treatments';
-import TreatmentsPage from './pages/Treament.tsx';
+import TreatmentsPage from './pages/Treatment';
 
 function App() {
   return (
