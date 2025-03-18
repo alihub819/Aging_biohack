@@ -102,7 +102,7 @@ export default function Hero() {
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Link
-                    to="/treatments"
+                    to="/treatment"
                     className="flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-full text-teal-700 bg-teal-100 hover:bg-teal-200 transition duration-300"
                   >
                     Our Therapies
