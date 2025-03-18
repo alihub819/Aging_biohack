@@ -280,10 +280,10 @@ export default function Blog() {
                 </button>
               </form>
               <p className="mt-3 text-sm text-teal-100">
-                We care about your privacy. Read our{' '}
-                <a href="/privacy" className="text-white underline">
+                We care about your privacy.
+                {/* <a href="/privacy" className="text-white underline">
                   privacy policy
-                </a>
+                </a> */}
                 .
               </p>
             </div>

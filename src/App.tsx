@@ -224,9 +224,9 @@ function App() {
                   viewport={{ once: true }}
                   className="text-center mb-12"
                 >
-                  <h2 className="text-3xl font-extrabold text-gray-900">Virtual Facility Tour</h2>
+                  <h2 className="text-3xl font-extrabold text-gray-900">Aging BioHacks Therapies</h2>
                   <p className="mt-4 text-xl text-gray-500">
-                    Take a virtual walk through our state-of-the-art facility
+                  Revitalize Your Life with Cutting Edge Regenerative Therapies
                   </p>
                 </motion.div>
                 <motion.div 

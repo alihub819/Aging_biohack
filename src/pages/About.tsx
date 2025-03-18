@@ -91,8 +91,8 @@ export default function About() {
       </div>
 
       {/* Timeline Section */}
-      <div className="bg-white py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* <div className="bg-white py-16 sm:py-24"> */}
+        {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Journey</h2>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
@@ -123,20 +123,26 @@ export default function About() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* CTA Section */}
       <div className="bg-teal-700">
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:justify-between">
-          <h2 className="text-3xl font-extrabold text-white md:text-4xl">
-            Ready to start your journey?
-            <span className="block text-teal-200">Schedule a consultation today.</span>
-          </h2>
-          <a href="/consultation" className="mt-8 inline-flex items-center px-5 py-3 text-base font-medium rounded-full text-teal-600 bg-white hover:bg-teal-50">
-            Get Started
-          </a>
-        </div>
-      </div>
+  <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:justify-between">
+    <h2 className="text-3xl font-extrabold text-white md:text-4xl">
+      Ready to start your journey?
+      <span className="block text-teal-200">Schedule a consultation today.</span>
+    </h2>
+    <a 
+      href="https://meet.brevo.com/medicalwellness/aging-biohacking-appointments-" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="mt-8 inline-flex items-center px-5 py-3 text-base font-medium rounded-full text-teal-600 bg-white hover:bg-teal-50"
+    >
+      Book Now
+    </a>
+  </div>
+</div>
+
     </Layout>
   );
 }

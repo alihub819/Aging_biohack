@@ -77,7 +77,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/treatmentdetail" className="text-gray-400 hover:text-white">
+                  <Link to="/treatment" className="text-gray-400 hover:text-white">
                     Treatments
                   </Link>
                 </li>
@@ -115,16 +115,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>These therapies are not FDA-approved for the treatment of specific diseases.</li>
                 <li>Individual results may vary.</li>
-                <li>
-                  <Link to="/privacy" className="hover:text-white">
+                {/* <li>
+                  <Link to="/Treamentcopy" className="hover:text-white">
                     Privacy Policy
                   </Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link to="/terms" className="hover:text-white">
                     Terms of Service
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

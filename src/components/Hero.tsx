@@ -124,7 +124,7 @@ export default function Hero() {
   <div className="relative h-64 sm:h-72 md:h-80 lg:h-full">
   <img
     className="absolute inset-0 w-full h-full object-cover"
-    src="https://img.freepik.com/free-photo/close-up-doctor-with-stethoscope_23-2149191355.jpg?t=st=1742233592~exp=1742237192~hmac=cef8de0534a8734c5311e7c99ebef95148e5c979c2878b97f038edfd714b9dbf&w=1380"
+    src="https://scontent.flhe3-2.fna.fbcdn.net/v/t39.30808-6/484562909_122112313472791308_6754301002082891181_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=wvhTqeu98ZgQ7kNvgFfVcTE&_nc_oc=AdgDeJB7ksaW9NZEbnI6mzneYmuk5U9rSCbl9BVim5BNWP23u4kRe0kxQintgz8f-AI&_nc_zt=23&_nc_ht=scontent.flhe3-2.fna&_nc_gid=zAIMllkw2rVgmSCZHElHEA&oh=00_AYExk-epVBiuOI3MYpfJUyfAzG_xuFIiiSoruc6ptfdkIg&oe=67DF4CCA"
     alt="Doctor with stethoscope"
   />
   <div className="absolute inset-0 bg-gradient-to-r from-white/50 to-transparent lg:from-white/0" />
