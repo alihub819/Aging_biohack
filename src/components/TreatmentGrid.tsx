@@ -147,7 +147,7 @@ export default function TreatmentGrid() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/treatment"
+            href="/TreatmentDetail"
             className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-teal-600 hover:bg-teal-700 transform transition-all duration-300"
           >
             View All Treatments
