@@ -235,7 +235,7 @@ export default function Blog() {
                 </div>
                 <div className="mt-4">
                   <a
-                    href={`/blog/${post.id}`}
+                    href={`/blogDetail/${post.id}`}
                     className="inline-flex items-center text-teal-600 hover:text-teal-700"
                   >
                     Read more

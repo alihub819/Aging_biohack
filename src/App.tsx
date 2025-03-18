@@ -14,6 +14,7 @@ import { Shield, Award, Users, Clock, Star, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { treatments } from './data/treatments';
 import TreatmentsPage from './pages/Treatment';
+import BlogDetail from './pages/BlogDetail';
 
 function App() {
   return (
@@ -256,6 +257,7 @@ function App() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/location" element={<Location />} />
         <Route path="/treatment" element={<TreatmentsPage />} />
+        <Route path="/blogDetail/:id" element={<BlogDetail />} />
         {treatments.map(treatment => (
           <Route 
             key={treatment.id}
