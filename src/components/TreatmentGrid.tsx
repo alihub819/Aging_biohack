@@ -145,14 +145,16 @@ export default function TreatmentGrid() {
           className="mt-12 text-center"
         >
           <motion.a
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            href="/Treatment"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-teal-600 hover:bg-teal-700 transform transition-all duration-300"
-          >
-            View All Treatments
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </motion.a>
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  href="https://www.agingbiohacking.com/treatment"
+  target="_blank" // This will open the link in a new tab
+  className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-teal-600 hover:bg-teal-700 transform transition-all duration-300"
+>
+  View All Treatments
+  <ArrowRight className="ml-2 h-5 w-5" />
+</motion.a>
+
         </motion.div>
       </div>
     </div>
