@@ -116,7 +116,6 @@ export const blogPostData = [
     "tags": ["NAD+ Therapy", "Mitochondria", "Cellular Energy", "Metabolic Health", "Longevity", "Wellness Optimization"],
     "readTime": "7 min read",
     "relatedPosts": ["4", "9", "11"],
-    "disclaimer": "This information is for educational purposes only and is not intended to diagnose, treat, cure, or prevent any disease. NAD+ therapy is investigational and not FDA-approved for any specific condition. Always consult with a licensed healthcare provider before considering any wellness therapies."
   },
   
   {
@@ -143,7 +142,6 @@ export const blogPostData = [
     "tags": ["Stem Cell Therapy", "Joint Health", "Inflammation", "Regenerative Science", "Mobility", "Science-Backed Wellness"],
     "readTime": "7 min read",
     "relatedPosts": ["3", "6", "10"],
-    "disclaimer": "This article is for educational purposes only and does not constitute medical advice. Stem cell therapy is investigational and not FDA-approved for treating joint conditions. Consult a licensed healthcare provider before considering any wellness strategies."
   },
   
   {
@@ -171,7 +169,6 @@ export const blogPostData = [
     "tags": ["Hormone Replacement Therapy", "HRT", "Hormonal Balance", "Metabolic Health", "Wellness", "Longevity", "Science-Backed Health"],
     "readTime": "7 min read",
     "relatedPosts": ["4", "7", "11"],
-    "disclaimer": "This article is for educational purposes only and does not constitute medical advice. Hormone Replacement Therapy (HRT) should only be pursued under the supervision of a licensed healthcare provider. Some HRT treatments are FDA-approved for specific uses, while others remain investigational."
   },
   
   {
