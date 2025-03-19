@@ -123,12 +123,15 @@ export default function BlogDetail() {
               health and longevity.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md transition font-medium">
-                Book a Consultation
-              </button>
-              <button className="bg-white border border-green-500 text-green-500 hover:bg-green-50 px-6 py-3 rounded-md transition font-medium">
+            <a href="https://meet.brevo.com/medicalwellness/aging-biohacking-appointments-" target="_blank" rel="noopener noreferrer">
+  <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md transition font-medium">
+    Book a Consultation
+  </button>
+</a>
+
+              {/* <button className="bg-white border border-green-500 text-green-500 hover:bg-green-50 px-6 py-3 rounded-md transition font-medium">
                 Learn More About Our Treatments
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
