@@ -90,17 +90,17 @@ export const blogPostData = [
   },
   
   {
-    "id": "4",
-    "title": "The Benefits of NAD+ Therapy for Cellular Energy",
-    "excerpt": "Discover how NAD+ therapy supports energy production and cellular wellness, helping optimize metabolic function and longevity.",
-    "description": "NAD+ is a vital coenzyme that plays a key role in energy production, metabolic function, and cellular repair. Learn how NAD+ therapy may support mitochondrial health, promote longevity, and optimize overall wellness in this science-backed guide.",
-    "date": "2024-03-19",
-    "category": "Wellness",
-    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
-    "author": {
-      "name": "Aging BioHacks",
-      "role": "Clinic",
-      "image": "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    id: "4",
+    title: "The Benefits of NAD+ Therapy for Cellular Energy",
+    excerpt: "Discover how NAD+ therapy supports energy production and cellular wellness, helping optimize metabolic function and longevity.",
+    description: "NAD+ is a vital coenzyme that plays a key role in energy production, metabolic function, and cellular repair. Learn how NAD+ therapy may support mitochondrial health, promote longevity, and optimize overall wellness in this science-backed guide.",
+   date: "2024-03-19",
+    category: "Wellness",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
     },
     "content": [
       "NAD+ (nicotinamide adenine dinucleotide) is a coenzyme found in every living cell. It plays an essential role in energy metabolism, helping mitochondria convert nutrients into ATP, the primary fuel for cellular processes.",
@@ -113,23 +113,23 @@ export const blogPostData = [
       "NAD+ is naturally produced in the body and can be supported through lifestyle factors such as:\n- A nutrient-rich diet containing precursors like niacin and tryptophan\n- Regular exercise, which promotes mitochondrial efficiency\n- Proper sleep, allowing for optimal cellular recovery",
       "NAD+ therapy represents a promising area of research for those looking to optimize cellular energy and overall well-being. As scientific studies continue to evolve, individuals interested in supporting their metabolic health can explore NAD+ therapy with guidance from medical professionals."
     ],
-    "tags": ["NAD+ Therapy", "Mitochondria", "Cellular Energy", "Metabolic Health", "Longevity", "Wellness Optimization"],
-    "readTime": "7 min read",
-    "relatedPosts": ["4", "9", "11"],
+    tags: ["NAD+ Therapy", "Mitochondria", "Cellular Energy", "Metabolic Health", "Longevity", "Wellness Optimization"],
+    readTime: "7 min read",
+    relatedPosts: ["4", "9", "11"],
   },
   
   {
-    "id": "5",
-    "title": "How Stem Cell Therapy is Transforming Joint Health",
-    "excerpt": "Learn how stem cell therapy is being explored for its potential role in supporting joint health, reducing inflammation, and encouraging tissue balance.",
-    "description": "Stem cell therapy is an emerging area of research in regenerative wellness, with studies examining its role in supporting joint function, reducing inflammation, and maintaining musculoskeletal health. This guide explores how stem cells are being studied for joint wellness and what current science says about their applications.",
-    "date": "2024-03-19",
-    "category": "Research",
-    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
-    "author": {
-      "name": "Aging BioHacks",
-      "role": "Clinic",
-      "image": "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    id: "5",
+    title: "How Stem Cell Therapy is Transforming Joint Health",
+    excerpt: "Learn how stem cell therapy is being explored for its potential role in supporting joint health, reducing inflammation, and encouraging tissue balance.",
+    description: "Stem cell therapy is an emerging area of research in regenerative wellness, with studies examining its role in supporting joint function, reducing inflammation, and maintaining musculoskeletal health. This guide explores how stem cells are being studied for joint wellness and what current science says about their applications.",
+   date: "2024-03-19",
+    category: "Research",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
     },
     "content": [
       "Joint health is essential for mobility, comfort, and an active lifestyle. However, factors like aging, injury, and chronic wear can contribute to joint stiffness, discomfort, and limited range of motion. Traditional approaches to joint care include medications, physical therapy, and surgical interventions, but researchers are actively exploring new possibilities, including stem cell therapy.",
@@ -139,23 +139,23 @@ export const blogPostData = [
       "For those seeking to support joint health, a comprehensive approach that includes proper nutrition, physical therapy, and evidence-based wellness strategies may be beneficial. Consulting with a licensed healthcare provider is crucial when considering any new wellness intervention.",
       "The field of regenerative medicine is rapidly evolving, with ongoing studies assessing the role of stem cells in joint health. As science progresses, more information will become available regarding their potential applications in supporting musculoskeletal function and mobility."
     ],
-    "tags": ["Stem Cell Therapy", "Joint Health", "Inflammation", "Regenerative Science", "Mobility", "Science-Backed Wellness"],
-    "readTime": "7 min read",
-    "relatedPosts": ["3", "6", "10"],
+    tags: ["Stem Cell Therapy", "Joint Health", "Inflammation", "Regenerative Science", "Mobility", "Science-Backed Wellness"],
+    readTime: "7 min read",
+    relatedPosts: ["3", "6", "10"],
   },
   
   {
-    "id": "6",
-    "title": "Hormone Replacement Therapy: Balancing Your Vitality",
-    "excerpt": "Explore the role of Hormone Replacement Therapy (HRT) in supporting hormonal balance and promoting overall well-being.",
-    "description": "Hormone Replacement Therapy (HRT) is designed to support individuals experiencing age-related hormonal fluctuations. This guide explores how HRT is being used to promote vitality, address common hormonal imbalances, and enhance quality of life while staying within FDA guidelines.",
-    "date": "2024-03-19",
-    "category": "Wellness",
-    "image": "https://images.unsplash.com/photo-1560807707-8cc77767d783?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
-    "author": {
-      "name": "Aging BioHacks",
-      "role": "Clinic",
-      "image": "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    id: "6",
+    title: "Hormone Replacement Therapy: Balancing Your Vitality",
+    excerpt: "Explore the role of Hormone Replacement Therapy (HRT) in supporting hormonal balance and promoting overall well-being.",
+    description: "Hormone Replacement Therapy (HRT) is designed to support individuals experiencing age-related hormonal fluctuations. This guide explores how HRT is being used to promote vitality, address common hormonal imbalances, and enhance quality of life while staying within FDA guidelines.",
+   date: "2024-03-19",
+    category: "Wellness",
+    image: "https://images.unsplash.com/photo-1560807707-8cc77767d783?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
     },
     "content": [
       "Hormones regulate nearly every function in the body, from metabolism and energy production to mood and sleep. As we age, hormone levels naturally fluctuate, potentially leading to symptoms like fatigue, mood changes, reduced libido, and decreased muscle mass.",
@@ -166,23 +166,23 @@ export const blogPostData = [
       "The FDA has approved certain hormone replacement treatments for specific conditions, but not all HRT approaches are FDA-approved for every use. Always ensure that any therapy pursued is backed by professional medical oversight.",
       "If you are experiencing symptoms of hormonal imbalance, consult a licensed healthcare provider to explore potential options that align with your wellness goals. Understanding how hormones influence overall well-being can be the first step toward optimizing vitality and long-term health."
     ],
-    "tags": ["Hormone Replacement Therapy", "HRT", "Hormonal Balance", "Metabolic Health", "Wellness", "Longevity", "Science-Backed Health"],
-    "readTime": "7 min read",
-    "relatedPosts": ["4", "7", "11"],
+    tags: ["Hormone Replacement Therapy", "HRT", "Hormonal Balance", "Metabolic Health", "Wellness", "Longevity", "Science-Backed Health"],
+    readTime: "7 min read",
+    relatedPosts: ["4", "7", "11"],
   },
   
   {
-    "id": "7",
-    "title": "IV Nutrient Therapy: Rehydration and Revitalization",
-    "excerpt": "Discover how IV Nutrient Therapy supports hydration, nutrient absorption, and overall wellness through direct delivery of essential vitamins and minerals.",
-    "description": "IV Nutrient Therapy is a wellness approach designed to optimize hydration and deliver essential nutrients directly into the bloodstream. This guide explores how IV therapy supports energy, immune function, and overall well-being while ensuring compliance with FDA guidelines.",
-    "date": "2024-03-19",
-    "category": "Wellness",
-    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
-    "author": {
-      "name": "Aging BioHacks",
-      "role": "Clinic",
-      "image": "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    id: "7",
+    title: "IV Nutrient Therapy: Rehydration and Revitalization",
+    excerpt: "Discover how IV Nutrient Therapy supports hydration, nutrient absorption, and overall wellness through direct delivery of essential vitamins and minerals.",
+    description: "IV Nutrient Therapy is a wellness approach designed to optimize hydration and deliver essential nutrients directly into the bloodstream. This guide explores how IV therapy supports energy, immune function, and overall well-being while ensuring compliance with FDA guidelines.",
+   date: "2024-03-19",
+    category: "Wellness",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
     },
     "content": [
       "Proper hydration and nutrient intake are essential for overall well-being, yet many individuals struggle to maintain optimal levels due to diet, stress, or lifestyle factors. IV Nutrient Therapy provides a direct way to deliver hydration and key vitamins into the bloodstream for enhanced absorption.",
@@ -193,23 +193,23 @@ export const blogPostData = [
       "If you are considering IV Nutrient Therapy, consult with a licensed healthcare professional to determine whether it aligns with your wellness objectives. A personalized assessment ensures that the therapy supports your health in a safe and effective way.",
       "As interest in wellness optimization grows, IV therapy remains a popular option for individuals looking to support hydration, nutrient levels, and overall well-being. Ongoing research continues to explore its applications in longevity and vitality strategies."
     ],
-    "tags": ["IV Nutrient Therapy", "Hydration", "Wellness", "Energy Boost", "Immune Support", "Science-Backed Health"],
-    "readTime": "6 min read",
-    "relatedPosts": ["3", "6", "9"],
+    tags: ["IV Nutrient Therapy", "Hydration", "Wellness", "Energy Boost", "Immune Support", "Science-Backed Health"],
+    readTime: "6 min read",
+    relatedPosts: ["3", "6", "9"],
     "disclaimer": "This article is for educational purposes only and does not constitute medical advice. IV Nutrient Therapy is not FDA-approved to diagnose, treat, cure, or prevent disease. Consult a licensed healthcare provider before considering IV therapy for wellness purposes."
   },
   {
-    "id": "8",
-    "title": "Cellular Health: The Foundation of Wellness",
-    "excerpt": "Explore why cellular health is essential for energy, longevity, and overall wellness, and how lifestyle choices can support optimal function.",
-    "description": "Cellular health is the foundation of wellness, impacting everything from energy levels to aging and immune function. This guide explores how cellular function supports overall well-being and how emerging research is uncovering ways to optimize longevity and performance.",
-    "date": "2024-03-19",
-    "category": "Research",
-    "image": "https://images.unsplash.com/photo-1550807012-3fb55b9db038?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
-    "author": {
-      "name": "Aging BioHacks",
-      "role": "Clinic",
-      "image": "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    id: "8",
+    title: "Cellular Health: The Foundation of Wellness",
+    excerpt: "Explore why cellular health is essential for energy, longevity, and overall wellness, and how lifestyle choices can support optimal function.",
+    description: "Cellular health is the foundation of wellness, impacting everything from energy levels to aging and immune function. This guide explores how cellular function supports overall well-being and how emerging research is uncovering ways to optimize longevity and performance.",
+   date: "2024-03-19",
+    category: "Research",
+    image: "https://images.unsplash.com/photo-1550807012-3fb55b9db038?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
     },
     "content": [
       "Cells are the fundamental building blocks of life, responsible for energy production, tissue repair, and immune defense. Maintaining cellular health is key to optimizing longevity and overall well-being.",
@@ -220,23 +220,23 @@ export const blogPostData = [
       "If you’re interested in optimizing cellular health, consult a licensed healthcare provider for personalized recommendations based on your wellness goals.",
       "As scientific understanding of cellular health expands, individuals have more options than ever to explore how lifestyle choices impact their well-being. Staying informed and adopting a science-backed approach to health can help support long-term vitality and resilience."
     ],
-    "tags": ["Cellular Health", "Longevity", "Wellness", "Mitochondria", "Science-Backed Health", "Healthy Aging"],
-    "readTime": "7 min read",
-    "relatedPosts": ["2", "5", "10"],
+    tags: ["Cellular Health", "Longevity", "Wellness", "Mitochondria", "Science-Backed Health", "Healthy Aging"],
+    readTime: "7 min read",
+    relatedPosts: ["2", "5", "10"],
     "disclaimer": "This article is for educational purposes only and does not constitute medical advice. Cellular health interventions are not FDA-approved to diagnose, treat, cure, or prevent disease. Consult a licensed healthcare provider before considering any wellness strategies."
   },
   {
-    "id": "9",
-    "title": "Advances in Regenerative Medicine: A Comprehensive Overview",
-    "excerpt": "Explore the latest developments in regenerative medicine, including advancements in cellular therapies, tissue engineering, and emerging research.",
-    "description": "Regenerative medicine is transforming the landscape of healthcare by focusing on the body's natural ability to repair and restore. This guide covers the latest breakthroughs in regenerative research, including stem cells, exosomes, and next-generation approaches to optimizing wellness.",
-    "date": "2024-03-19",
-    "category": "Research",
-    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
-    "author": {
-      "name": "Aging BioHacks",
-      "role": "Clinic",
-      "image": "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    id: "9",
+    title: "Advances in Regenerative Medicine: A Comprehensive Overview",
+    excerpt: "Explore the latest developments in regenerative medicine, including advancements in cellular therapies, tissue engineering, and emerging research.",
+    description: "Regenerative medicine is transforming the landscape of healthcare by focusing on the body's natural ability to repair and restore. This guide covers the latest breakthroughs in regenerative research, including stem cells, exosomes, and next-generation approaches to optimizing wellness.",
+   date: "2024-03-19",
+    category: "Research",
+    image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
     },
     "content": [
       "Regenerative medicine is a rapidly evolving field focused on harnessing the body's natural mechanisms to promote cellular adaptation, tissue support, and overall wellness. By integrating advanced scientific discoveries, researchers are exploring how regenerative therapies may contribute to long-term health strategies.",
@@ -247,23 +247,23 @@ export const blogPostData = [
       "For individuals interested in regenerative wellness, consulting a licensed healthcare provider is essential to understanding available options and ensuring that any approach aligns with regulatory guidelines.",
       "The future of regenerative medicine is promising, with ongoing research continuing to shape its role in wellness and longevity. By staying informed about the latest developments, individuals can explore scientifically-backed strategies to optimize their health and well-being."
     ],
-    "tags": ["Regenerative Medicine", "Stem Cell Therapy", "Exosome Therapy", "Tissue Engineering", "Longevity", "Science-Backed Health"],
-    "readTime": "7 min read",
-    "relatedPosts": ["4", "6", "10"],
+    tags: ["Regenerative Medicine", "Stem Cell Therapy", "Exosome Therapy", "Tissue Engineering", "Longevity", "Science-Backed Health"],
+    readTime: "7 min read",
+    relatedPosts: ["4", "6", "10"],
     "disclaimer": "This article is for educational purposes only and does not constitute medical advice. Regenerative medicine approaches, including stem cell and exosome therapy, remain investigational and are not FDA-approved for the treatment of medical conditions. Consult a licensed healthcare provider before considering any regenerative therapies."
   },
   {
-    "id": "10",
-    "title": "Integrative Approaches to Wellness at Aging BioHacks",
-    "excerpt": "Discover how a holistic and science-backed approach to wellness can optimize your health, enhance longevity, and improve your overall quality of life.",
-    "description": "At Aging BioHacks, we embrace an integrative approach to wellness, combining science-backed strategies with holistic health to help individuals optimize their well-being. This guide explores how personalized wellness plans, cellular health optimization, and mind-body balance contribute to longevity and vitality.",
-    "date": "2024-03-19",
-    "category": "Wellness",
-    "image": "https://images.unsplash.com/photo-1574169208507-84376144848b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&q=80",
-    "author": {
-      "name": "Aging BioHacks",
-      "role": "Clinic",
-      "image": "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
+    id: "10",
+    title: "Integrative Approaches to Wellness at Aging BioHacks",
+    excerpt: "Discover how a holistic and science-backed approach to wellness can optimize your health, enhance longevity, and improve your overall quality of life.",
+    description: "At Aging BioHacks, we embrace an integrative approach to wellness, combining science-backed strategies with holistic health to help individuals optimize their well-being. This guide explores how personalized wellness plans, cellular health optimization, and mind-body balance contribute to longevity and vitality.",
+   date: "2024-03-19",
+    category: "Wellness",
+    image: "https://images.unsplash.com/photo-1574169208507-84376144848b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&q=80",
+    author: {
+      name: "Aging BioHacks",
+      role: "Clinic",
+      image: "https://scontent.flhe7-1.fna.fbcdn.net/v/t39.30808-1/482260041_650656560872172_4278988343809861039_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=AUe5bHTMMxMQ7kNvgH49mAu&_nc_oc=AdgPf1JTIPbLbm6h5c5iDlRMFHMyNbIyYnJ8IrGOxhWmyuhyeygvUiW8M3zT5YwSJiM&_nc_zt=24&_nc_ht=scontent.flhe7-1.fna&_nc_gid=A6BWsN5fVpUrPD-OvKwKyUg&oh=00_AYD0Sz5bf_73qxLtuPiYtZhmJxVx3Qnj39-S30yTmKeMWA&oe=67C6452D"
     },
     "content": [
       "Wellness is more than just the absence of illness—it’s about optimizing health through a **comprehensive, science-driven approach**. At Aging BioHacks, we believe in integrating the latest advancements in **cellular health, longevity science, and holistic wellness** to support long-term well-being.",
@@ -273,9 +273,9 @@ export const blogPostData = [
       "While integrative wellness incorporates a broad spectrum of health strategies, it’s essential to consult a licensed healthcare provider before making significant lifestyle changes. An evidence-based, professional approach ensures that wellness interventions are aligned with individual health goals.",
       "At Aging BioHacks, we are committed to providing education and research-backed insights into **science-driven wellness strategies**. By staying informed, individuals can take proactive steps toward a **longer, healthier, and more vibrant life**."
     ],
-    "tags": ["Integrative Wellness", "Holistic Health", "Cellular Health", "Longevity", "Science-Backed Wellness", "Mind-Body Balance"],
-    "readTime": "7 min read",
-    "relatedPosts": ["3", "7", "11"],
+    tags: ["Integrative Wellness", "Holistic Health", "Cellular Health", "Longevity", "Science-Backed Wellness", "Mind-Body Balance"],
+    readTime: "7 min read",
+    relatedPosts: ["3", "7", "11"],
     "disclaimer": "This article is for educational purposes only and does not constitute medical advice. Wellness strategies should be pursued under the guidance of a licensed healthcare provider. Aging BioHacks follows FDA guidelines in providing science-based wellness education."
   }
   
