@@ -2,73 +2,61 @@ export const treatments = [
   {
     id: 'nad-therapy',
     title: 'NAD+ Therapy',
-    description: 'NAD+ (nicotinamide adenine dinucleotide) is a coenzyme found in every living cell, vital for energy production and cellular repair.',
+    description: 'NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme essential for cellular energy metabolism and various biological processes.',
     image: 'https://images.unsplash.com/photo-1584362917165-526a968579e8?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
-    benefits: ['Increased energy levels', 'Enhanced mental clarity', 'Support for cellular repair', 'Improved metabolic function'],
+    benefits: ['Supports cellular energy', 'May enhance mental clarity', 'Investigated for cellular health', 'Potential metabolic support'],
     details: {
-      overview: 'NAD+ IV Therapy infusions replenish this critical molecule to optimal levels, working on a deep cellular level to rejuvenate your body. NAD+ levels naturally decline with age and stress, which can contribute to fatigue, slower metabolism, and cognitive fog.',
-      process: ['Comprehensive health assessment', 'Customized NAD+ protocol', 'IV infusion administered by medical professionals', 'Follow-up evaluation'],
-      eligibility: ['Adults seeking energy optimization', 'Individuals with fatigue or brain fog', 'Those interested in cellular health', 'No active infections']
+      overview: 'NAD+ IV Therapy is being researched for its ability to replenish this critical molecule to optimal levels, promoting cellular health and energy metabolism. NAD+ levels naturally decline with age, potentially affecting metabolism and cognitive function.',
+      process: ['Comprehensive health assessment', 'Customized NAD+ protocol', 'IV administration by qualified professionals', 'Follow-up evaluation'],
+      eligibility: ['Adults seeking wellness optimization', 'Individuals with fatigue or brain fog', 'Those interested in cellular health', 'No active infections']
     }
   },
   {
     id: 'exosome-therapy',
     title: 'Exosome Therapy',
-    description: 'Exosomes are tiny vesicles released by cells that act as messengers, carrying proteins, growth factors, and genetic material between cells.',
+    description: 'Exosomes are small vesicles that facilitate cellular communication and are being studied for their potential benefits in regenerative medicine.',
     image: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
-    benefits: ['Reduced inflammation', 'Tissue regeneration', 'Accelerated recovery', 'Improved cellular communication'],
+    benefits: ['Investigating inflammation support', 'Potential tissue regeneration', 'Improved cellular communication', 'Support for overall wellness'],
     details: {
-      overview: 'Our exosome therapy involves concentrated exosomes delivered via injection or IV to target areas in need of repair. The exosomes home in on inflamed or damaged tissues and release their healing cargo.',
-      process: ['Medical evaluation', 'Targeted exosome administration', 'Personalized recovery protocol', 'Progress monitoring'],
-      eligibility: ['Individuals with chronic inflammation', 'Those seeking tissue repair', 'Good overall health', 'No active infections']
+      overview: 'Exosome therapy is currently under investigation for its potential role in enhancing cellular communication and supporting tissue health. Exosomes are delivered via injection or IV as part of investigational protocols.',
+      process: ['Medical evaluation', 'Targeted exosome administration', 'Personalized wellness protocol', 'Progress monitoring'],
+      eligibility: ['Individuals seeking wellness optimization', 'Those interested in tissue support', 'Good overall health', 'No active infections']
     }
   },
   {
     id: 'stem-cell-therapy',
     title: 'Stem Cell Therapy',
-    description: 'Stem cells are the body\'s master cells because they can transform into many different cell types and help repair tissues.',
+    description: 'Stem cells are being researched for their potential to support natural recovery and regenerative processes.',
     image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
-    benefits: ['Tissue regeneration', 'Pain management', 'Improved mobility', 'Natural healing support'],
+    benefits: ['Potential tissue support', 'Pain management research', 'Improved mobility', 'Investigational natural recovery support'],
     details: {
-      overview: 'Our stem cell therapies typically use adult stem cells (for example, those derived from your own bone marrow or fat) to promote healing of injured or degenerated tissues.',
-      process: ['Comprehensive evaluation', 'Stem cell harvesting or preparation', 'Targeted administration', 'Rehabilitation program'],
-      eligibility: ['Stable medical condition', 'No active infections', 'Physician referral', 'Realistic expectations']
+      overview: 'Stem cell therapies using adult stem cells are being researched for their potential to support healing of tissues and enhance overall wellness. Current studies explore their role in various wellness applications.',
+      process: ['Comprehensive evaluation', 'Stem cell harvesting or preparation', 'Targeted administration', 'Wellness program planning'],
+      eligibility: ['Stable health condition', 'No active infections', 'Physician consultation', 'Realistic wellness expectations']
     }
   },
-  // {
-  //   id: 'hormone-therapy',
-  //   title: 'Hormone Replacement Therapy',
-  //   description: 'Hormone Replacement Therapy restores and balances hormones that decline or become imbalanced with age.',
-  //   image: 'https://images.unsplash.com/photo-1631815588090-d1bcbe9a8545?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
-  //   benefits: ['Increased energy', 'Improved mood', 'Enhanced cognitive function', 'Better sleep quality'],
-  //   details: {
-  //     overview: 'Our HRT programs aim to replenish deficient hormones like estrogen, progesterone, testosterone, or thyroid hormone to optimal levels under careful medical supervision.',
-  //     process: ['Comprehensive hormone testing', 'Personalized treatment plan', 'Regular monitoring', 'Ongoing optimization'],
-  //     eligibility: ['Adults with hormone deficiencies', 'Symptomatic individuals', 'Comprehensive health screening', 'No contraindications']
-  //   }
-  // },
   {
     id: 'iv-nutrient-therapy',
     title: 'IV Nutrient Therapy',
-    description: 'IV Nutrient Therapy delivers a potent cocktail of vitamins, minerals, antioxidants, and fluids directly into your bloodstream.',
+    description: 'IV Nutrient Therapy provides vitamins, minerals, and antioxidants directly into the bloodstream for optimal absorption.',
     image: 'https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
-    benefits: ['Maximum nutrient absorption', 'Enhanced energy', 'Immune system support', 'Improved hydration'],
+    benefits: ['Maximum nutrient absorption', 'Potential energy enhancement', 'Immune system support', 'Improved hydration'],
     details: {
-      overview: 'By bypassing the digestive system, IV therapy allows 100% of each nutrient to be absorbed and put to use immediately by your cells.',
-      process: ['Health assessment', 'Customized IV formula', 'Comfortable administration', 'Post-therapy recommendations'],
-      eligibility: ['Adults seeking wellness optimization', 'Those with nutrient deficiencies', 'Individuals with absorption issues', 'No severe kidney disease']
+      overview: 'IV Therapy bypasses the digestive system, allowing for efficient nutrient delivery to the cells. It is often used to support general wellness and energy optimization.',
+      process: ['Health assessment', 'Customized IV formulation', 'Comfortable administration', 'Post-therapy recommendations'],
+      eligibility: ['Adults seeking wellness optimization', 'Individuals with nutrient deficiencies', 'Those interested in cellular support', 'No severe kidney disease']
     }
   },
   {
     id: 'anti-aging',
     title: 'Anti-Aging & Rejuvenation',
-    description: 'Comprehensive rejuvenation treatments for optimal aging and vitality using multiple regenerative approaches.',
+    description: 'A holistic approach to promoting wellness and supporting healthy aging through personalized wellness strategies.',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
-    benefits: ['Cellular regeneration', 'Energy enhancement', 'Skin revitalization', 'Overall wellness improvement'],
+    benefits: ['Potential cellular support', 'Energy enhancement', 'Skin wellness', 'Overall wellness support'],
     details: {
-      overview: 'Our anti-aging program takes a holistic approach to aging, focusing on cellular health and regeneration through a combination of our most effective therapies.',
-      process: ['Biomarker testing', 'Personalized protocols', 'Multiple therapy integration', 'Ongoing optimization'],
-      eligibility: ['Adults 30+', 'Good overall health', 'Commitment to lifestyle changes', 'Realistic expectations']
+      overview: 'Our anti-aging program integrates various wellness strategies aimed at promoting cellular health and supporting optimal aging. This approach is personalized to meet each individual’s wellness goals.',
+      process: ['Biomarker testing', 'Personalized protocols', 'Therapy integration', 'Ongoing optimization'],
+      eligibility: ['Adults 30+', 'Good overall health', 'Commitment to wellness', 'Realistic expectations']
     }
   }
 ];
