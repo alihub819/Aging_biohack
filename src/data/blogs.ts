@@ -4,7 +4,7 @@ export const blogPostData = [
     title: "Cellular Health: The Foundation of Wellness",
     excerpt: "Understand why cellular health is crucial for maintaining overall vitality and preventing aging.",
     description:
-      "Dive deep into the science of cellular health and discover how optimizing your cells' function can dramatically improve your overall wellness, slow down aging, and prevent chronic diseases.",
+      "Dive into cellular health science and learn how optimizing cell function may enhance wellness, support healthy aging, and promote resilience.",
     date: "2024-02-05",
     category: "Research",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&q=80",
@@ -33,7 +33,7 @@ export const blogPostData = [
     id: "2",
     
       title: "Understanding Exosome Therapy: A Comprehensive Guide to Cellular Communication & Wellness",
-      description: "Explore the science behind exosome therapy, its role in cellular communication, and its potential applications in wellness strategies. Learn how exosomes support tissue adaptation, immune balance, and regenerative processes in this comprehensive guide.",
+      description: "Discover how exosome therapy may support cellular communication, tissue health, and immune balance as part of wellness strategies.",
       excerpt: "Exosome therapy is an emerging area of research focused on cellular communication and wellness support. These tiny extracellular vesicles play a crucial role in intercellular messaging, influencing tissue health, immune modulation, and biological balance. While still under scientific investigation, exosomes are being explored for their potential to support natural recovery processes. Learn how exosome therapy fits into modern wellness approaches in this detailed guide.",
     
     

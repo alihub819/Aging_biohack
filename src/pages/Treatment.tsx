@@ -14,7 +14,7 @@ export default function TreatmentsPage() {
               Our Treatments
             </h1>
             <p className="max-w-xl mt-5 mx-auto text-xl text-teal-100">
-              Discover our innovative regenerative medicine treatments designed to optimize your health and vitality.
+            Explore our cutting-edge regenerative medicine treatments designed to promote wellness and vitality
             </p>
           </div>
         </div>

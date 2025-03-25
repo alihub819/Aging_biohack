@@ -7,7 +7,7 @@ export const treatments = [
     benefits: ['Supports cellular energy', 'May enhance mental clarity', 'Investigated for cellular health', 'Potential metabolic support'],
     details: {
       overview: 'NAD+ IV Therapy is being researched for its ability to replenish this critical molecule to optimal levels, promoting cellular health and energy metabolism. NAD+ levels naturally decline with age, potentially affecting metabolism and cognitive function.',
-      process: ['Comprehensive health assessment', 'Customized NAD+ protocol', 'IV administration by qualified professionals', 'Follow-up evaluation'],
+      process: ['Comprehensive health assessment', 'Customized NAD+ protocol', 'IV administration by qualified professionals'],
       eligibility: ['Adults seeking wellness optimization', 'Individuals with fatigue or brain fog', 'Those interested in cellular health', 'No active infections']
     }
   },
@@ -51,11 +51,11 @@ export const treatments = [
     id: 'anti-aging',
     title: 'Anti-Aging & Rejuvenation',
     description: 'A holistic approach to promoting wellness and supporting healthy aging through personalized wellness strategies.',
-    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
+    image: 'https://www.centracare.com/app/files/public/cad0243f-fb7d-4046-976a-918340bdb265/Midsota/Blogs/2024-11-03_Demand-for-Cosmetic-Laser-Procedures.jpg',
     benefits: ['Potential cellular support', 'Energy enhancement', 'Skin wellness', 'Overall wellness support'],
     details: {
       overview: 'Our anti-aging program integrates various wellness strategies aimed at promoting cellular health and supporting optimal aging. This approach is personalized to meet each individual’s wellness goals.',
-      process: ['Biomarker testing', 'Personalized protocols', 'Therapy integration', 'Ongoing optimization'],
+      process: ['Biomarker testing', 'Personalized protocols', 'Therapy integration'],
       eligibility: ['Adults 30+', 'Good overall health', 'Commitment to wellness', 'Realistic expectations']
     }
   }

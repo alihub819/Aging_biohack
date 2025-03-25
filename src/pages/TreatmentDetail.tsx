@@ -115,12 +115,12 @@ export default function TreatmentDetail({ treatment }: Props) {
               
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <Clock className="h-5 w-5 text-teal-600" />
+                 
                
                 </div>
 
                 <div>
-                  <h4 className="font-medium text-gray-900 mb-2">Eligibility Criteria</h4>
+                  {/* <h4 className="font-medium text-gray-900 mb-2">Eligibility Criteria</h4> */}
                   <ul className="space-y-2">
                     {treatment.details?.eligibility.map((criterion:any, index:number) => (
                       <li key={index} className="flex items-start">
