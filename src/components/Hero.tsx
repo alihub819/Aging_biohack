@@ -242,7 +242,7 @@ export default function Hero() {
 
       <motion.div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <div className="relative h-64 sm:h-72 md:h-80 lg:h-full">
-          <img className="absolute inset-0 w-full h-full object-cover" src="https://scontent.flhe3-2.fna.fbcdn.net/v/t39.30808-6/484790368_122112359144791308_7986855692373476395_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=4oF2hyV5ZKYQ7kNvgERsQsw&_nc_oc=Adnslzd0cmABFRDA1Kor3PeYpwAksvI_fKmQZTP7uuQckX0Od3Ni_RPlvbRvBQWnNkI&_nc_zt=23&_nc_ht=scontent.flhe3-2.fna&_nc_gid=_YayS0MusDGk3q1tMkij4Q&oh=00_AYHcDD8CL323d_YDlpKogPpKtNLyjd3iAjejGT3JuGQIzw&oe=67DF772A"
+          <img className="absolute inset-0 w-full h-full object-cover" src="https://res.cloudinary.com/dsex1a9tu/image/upload/v1743026099/Blue_White_Natural_Healing_Therapy_New_Year_Promotional_Instagram_Post_4_bsstvd.png"
  alt="Doctor with stethoscope" />
           <div className="absolute inset-0 bg-gradient-to-r from-white/50 to-transparent" />
         </div>

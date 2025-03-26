@@ -265,14 +265,15 @@ export default function Blog() {
                   })}
                 </div>
                 <div className="mt-4">
-                  <a
-                    href={`/blogDetail/${post.id}`}
-                    className="inline-flex items-center text-teal-600 hover:text-teal-700"
-                  >
-                    Read more
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </a>
-                </div>
+  <a
+    href={`/blogDetail/${post.id}`}
+    className="inline-flex items-center bg-teal-600 text-white hover:bg-teal-700 font-medium px-4 py-2 rounded-lg border border-teal-700"
+  >
+    Read more
+    <ArrowRight className="ml-2 h-4 w-4" />
+  </a>
+</div>
+
               </div>
             </article>
           ))}

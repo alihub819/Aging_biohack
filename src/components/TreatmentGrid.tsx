@@ -85,7 +85,7 @@ export default function TreatmentGrid() {
                     className="mt-4 flex items-center space-x-2"
                   >
                     <Clock className="h-4 w-4 text-teal-600" />
-                    <span className="text-sm text-gray-600"></span>
+                    <span className="text-sm text-gray-600">1 to 2 weeks</span>
                   </motion.div>
                   <motion.div
                     initial={{ opacity: 0, x: -10 }}
@@ -125,12 +125,13 @@ export default function TreatmentGrid() {
                   </div>
                   <Link to={`/treatments/${treatment.id}`}>
                   <motion.a
-                    whileHover={{ scale: 1.05, x: 5 }}
-                    className="flex items-center text-teal-600 hover:text-teal-700 font-medium"
-                    >
-                    Learn more
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </motion.a>
+  whileHover={{ scale: 1.05, x: 5 }}
+  className="flex items-center bg-teal-600 text-white hover:bg-teal-700 font-medium px-4 py-2 rounded-lg border border-teal-700"
+>
+  Learn more
+  <ArrowRight className="ml-2 h-4 w-4" />
+</motion.a>
+
                     </Link>
                 </div>
               </div>
@@ -150,8 +151,7 @@ export default function TreatmentGrid() {
           <motion.a
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
-  // href="/treatment"
-  // target="_blank" // This will open the link in a new tab
+ 
   className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-teal-600 hover:bg-teal-700 transform transition-all duration-300"
 >
   View All Treatments

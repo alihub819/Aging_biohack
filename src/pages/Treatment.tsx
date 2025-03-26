@@ -37,14 +37,15 @@ export default function TreatmentsPage() {
                   <p className="mt-3 text-base text-gray-500">{treatment.description}</p>
                 </div>
                 <div className="mt-6">
-                  <Link
-                    to={`/treatments/${treatment.id}`}
-                    className="inline-flex items-center text-teal-600 hover:text-teal-500"
-                  >
-                    Learn more
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </div>
+  <Link
+    to={`/treatments/${treatment.id}`}
+    className="inline-flex items-center bg-teal-600 text-white hover:bg-teal-700 font-medium px-4 py-2 rounded-lg border border-teal-700"
+  >
+    Learn more
+    <ArrowRight className="ml-2 h-4 w-4" />
+  </Link>
+</div>
+
               </div>
             </div>
           ))}
